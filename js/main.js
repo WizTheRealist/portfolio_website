@@ -63,9 +63,7 @@ messageTextarea.addEventListener('input', () => {
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
     // e.preventDefault();
-    alert('Thank you for your message!');
-    contactForm.reset();
-    charCount.textContent = '0/500';
+    alert('Thank you! Your message has been sent.');
 });
 
 // Intersection Observer for section animations
