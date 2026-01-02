@@ -486,44 +486,21 @@
                 <p class="text-slate-500 dark:text-gray-400 text-base font-normal leading-relaxed">Have a project in mind or just want to say hi? I'm always open to discussing new opportunities.</p>
             </div>
             
-            <form class="flex flex-col gap-5 mb-8" id="contactForm" action="https://formspree.io/f/mlgdbepn" method="POST">
-                <div class="flex flex-col gap-2 group">
-                    <label class="text-slate-900 dark:text-white text-sm font-medium leading-normal ml-1" for="name">Name</label>
-                    <div class="relative">
-                        <input class="peer form-input block w-full rounded-xl text-slate-900 dark:text-white bg-white dark:bg-[#1c2127] border border-gray-200 dark:border-[#3b4754] focus:border-primary focus:ring-4 focus:ring-primary/20 dark:focus:ring-primary/10 h-14 placeholder:text-gray-400 dark:placeholder:text-[#9dabb9] px-4 text-base font-normal leading-normal transition-all duration-200 ease-out" name="name" id="name" placeholder="Your Name" type="text" required/>
-                        <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-primary opacity-0 peer-focus:opacity-100 transition-opacity duration-200">
-                            <span class="material-symbols-outlined text-[20px]">person</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col gap-2 group">
-                    <label class="text-slate-900 dark:text-white text-sm font-medium leading-normal ml-1" for="email">Email</label>
-                    <div class="relative">
-                        <input class="peer form-input block w-full rounded-xl text-slate-900 dark:text-white bg-white dark:bg-[#1c2127] border border-gray-200 dark:border-[#3b4754] focus:border-primary focus:ring-4 focus:ring-primary/20 dark:focus:ring-primary/10 h-14 placeholder:text-gray-400 dark:placeholder:text-[#9dabb9] px-4 text-base font-normal leading-normal transition-all duration-200 ease-out" name="_replyto" id="email" inputmode="email" placeholder="john@example.com" type="email" required/>
-                        <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-primary opacity-0 peer-focus:opacity-100 transition-opacity duration-200">
-                            <span class="material-symbols-outlined text-[20px]">mail</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col gap-2 group">
-                    <label class="text-slate-900 dark:text-white text-sm font-medium leading-normal ml-1" for="message">Message</label>
-                    <div class="relative">
-                        <textarea class="peer form-textarea block w-full rounded-xl text-slate-900 dark:text-white bg-white dark:bg-[#1c2127] border border-gray-200 dark:border-[#3b4754] focus:border-primary focus:ring-4 focus:ring-primary/20 dark:focus:ring-primary/10 min-h-[160px] placeholder:text-gray-400 dark:placeholder:text-[#9dabb9] p-4 text-base font-normal leading-normal transition-all duration-200 ease-out resize-none" name="message" id="message" placeholder="Tell me about your project..." maxlength="500" required></textarea>
-                    </div>
-                    <div class="flex justify-end px-1">
-                        <span id="charCount" class="text-xs font-medium text-slate-400 dark:text-gray-500">0/500</span>
-                    </div>
-                </div>
-                
-                <button type="submit" class="group w-full h-14 bg-primary hover:bg-blue-600 active:scale-[0.98] text-white font-bold text-base rounded-xl transition-all duration-200 flex items-center justify-center gap-2 shadow-lg shadow-primary/25 mt-2 overflow-hidden relative">
-                    <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
-                    <span class="relative z-10">Send Message</span>
-                    <span class="material-symbols-outlined text-[20px] relative z-10 group-hover:translate-x-1 transition-transform">send</span>
-                </button>
-            </form>
-            
+            <form
+                action="https://formspree.io/f/mlgdbepn"
+                method="POST"
+                >
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>            
             <div class="relative py-4 mt-2">
                 <div aria-hidden="true" class="absolute inset-0 flex items-center">
                     <div class="w-full border-t border-gray-300 dark:border-gray-800"></div>
