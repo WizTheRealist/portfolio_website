@@ -62,8 +62,8 @@ messageTextarea.addEventListener('input', () => {
 // Form submission
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Thank you for your message! This is a demo form.');
+    // e.preventDefault();
+    alert('Thank you for your message!');
     contactForm.reset();
     charCount.textContent = '0/500';
 });
