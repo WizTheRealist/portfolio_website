@@ -69,3 +69,21 @@ html {
 .mobile-menu.open {
     transform: translateX(0);
 }
+
+/* Call-to-action buttons */
+.cta-btn {
+    white-space: nowrap; /* prevent text squeezing */
+}
+
+/* Laptop and up */
+@media (min-width: 1024px) {
+    .cta-btn {
+        height: 3.75rem;      /* h-15 equivalent */
+        padding-inline: 2.5rem; /* more breathing room */
+        font-size: 1rem;      /* subtle text bump */
+    }
+
+    .cta-btn .material-symbols-outlined {
+        font-size: 22px;
+    }
+}
